@@ -260,17 +260,14 @@
                             </div>
                             <hr>
                             <div class="flex lg:p-4 p-1 grid grid-cols-1 lg:grid-cols-3 justify-start">
-                                <button class="btn btn-wide">Boarding Point-Laxmipur</button>
-                                <button class="btn btn-wide">Droping Point-Bogura</button>
-                                <button class="btn btn-wide">Est.Time-9 Hour</button>
+                                <button class="btn btn-wide">Boarding Point-Uganda</button>
+                                <button class="btn btn-wide">Dropping Point-Noakhali</button>
+                                <button class="btn btn-wide">Estimated.Time- 9 Hour</button>
                             </div>
                         </div>
                     </div>
 
                 </div>
-
-
-                <!-- pictire border -->
 
                 <div class="flex flex-col justify-center text-center items-center mx-auto">
                     <img class="lg:h-[100px]" src="images/fare.png" alt="">
@@ -280,11 +277,11 @@
 
             </div>
 
-            <!-- ticker purchase section -->
+            <!-- Ticket purchasing section -->
 
             <div class="bg-white rounded-3xl grid grid-cols-1 lg:grid-cols-3 gap-5 lg:p-8 p-4 mb-20">
 
-                <!-- parent div of seatssssss -->
+                <!-- Main div of seats -->
                 <div class="col-span-2">
                     <h1 class="text-3xl font-semibold">Select Your Seats..</h1>
                     <hr class="mt-3 mb-3">
@@ -360,14 +357,13 @@
                         <table>
                             <thead>
                                 <tr>
-                                    <th class="text-xl font-semibold">#</th>
+                                    <th class="text-xl font-semibold">No. </th>
                                     <th class="text-xl font-semibold">Seat</th>
                                     <th class="text-xl font-semibold">Class</th>
                                     <th class="text-xl font-semibold">Price</th>
                                 </tr>
                             </thead>
                             <tbody id="selectedSeatsTableBody">
-                                <!-- Seat information will be dynamically added here -->
                             </tbody>
                         </table>
                     </div>
@@ -382,13 +378,30 @@
                         <input type="text" id="couponCode" placeholder="Enter coupon code"
                             class="border border-gray-400 px-4 py-2 rounded-md focus:outline-none focus:border-blue-500">
                         <button onclick="applyCoupon()"
-                            class="bg-blue-500 text-white px-4 py-2 rounded-md ml-2">Apply</button>
+                            class="bg-green-600 text-white px-4 py-2 rounded-lg ml-2">Apply</button>
                         <p id="discountMessage" class="mt-2"></p>
                         <div id="finalPrice" class="text-xl font-semibold mt-2"></div>
                     </div>
+                    <div class="flex flex-col items-center mt-4">
+                        <label for="passengerName" class="mb-1 text-lg text-green-600">Passenger Name:</label>
+                        <input type="text" id="passengerName"
+                            class="border border-green-600 px-4 py-2 rounded-md focus:outline-none focus:border-green-700 mb-2"
+                            placeholder="Enter passenger name">
+
+                        <label for="phoneNumber" class="mb-1 text-lg text-green-600">Phone Number:</label>
+                        <input type="tel" id="phoneNumber"
+                            class="border border-green-600 px-4 py-2 rounded-md focus:outline-none focus:border-green-700 mb-2"
+                            placeholder="Enter phone number">
+
+                        <label for="email" class="mb-1 text-lg text-green-600">Email ID:</label>
+                        <input type="email" id="email"
+                            class="border border-green-600 px-4 py-2 rounded-md focus:outline-none focus:border-green-700 mb-2"
+                            placeholder="Enter email id">
+                    </div>
+
                     <!-- Next button -->
                     <div class="mt-6">
-                        <button id="nextButton" class="btn" disabled>Next</button>
+                        <button id="nextButton" class="btn text-white bg-green-600" disabled>Next</button>
                     </div>
                 </div>
     </main>
