@@ -121,4 +121,3 @@ seatButtons.forEach(seatButton => {
         handleSeatSelection(seatButton);
     });
 });
-
